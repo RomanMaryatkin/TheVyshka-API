@@ -1,0 +1,8 @@
+C:\Users\user\Desktop\TheVyshka copy\TheVyshka.Data\bin\Debug\netcoreapp3.1\TheVyshka.Data.deps.json
+C:\Users\user\Desktop\TheVyshka copy\TheVyshka.Data\bin\Debug\netcoreapp3.1\TheVyshka.Data.dll
+C:\Users\user\Desktop\TheVyshka copy\TheVyshka.Data\bin\Debug\netcoreapp3.1\TheVyshka.Data.pdb
+C:\Users\user\Desktop\TheVyshka copy\TheVyshka.Data\obj\Debug\netcoreapp3.1\TheVyshka.Data.csprojAssemblyReference.cache
+C:\Users\user\Desktop\TheVyshka copy\TheVyshka.Data\obj\Debug\netcoreapp3.1\TheVyshka.Data.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\TheVyshka copy\TheVyshka.Data\obj\Debug\netcoreapp3.1\TheVyshka.Data.AssemblyInfo.cs
+C:\Users\user\Desktop\TheVyshka copy\TheVyshka.Data\obj\Debug\netcoreapp3.1\TheVyshka.Data.dll
+C:\Users\user\Desktop\TheVyshka copy\TheVyshka.Data\obj\Debug\netcoreapp3.1\TheVyshka.Data.pdb

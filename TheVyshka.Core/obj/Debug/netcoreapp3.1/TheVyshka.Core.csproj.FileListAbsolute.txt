@@ -1,0 +1,11 @@
+C:\Users\user\Desktop\TheVyshka copy\TheVyshka.Core\bin\Debug\netcoreapp3.1\TheVyshka.Core.deps.json
+C:\Users\user\Desktop\TheVyshka copy\TheVyshka.Core\bin\Debug\netcoreapp3.1\TheVyshka.Core.dll
+C:\Users\user\Desktop\TheVyshka copy\TheVyshka.Core\bin\Debug\netcoreapp3.1\TheVyshka.Core.pdb
+C:\Users\user\Desktop\TheVyshka copy\TheVyshka.Core\bin\Debug\netcoreapp3.1\TheVyshka.Data.dll
+C:\Users\user\Desktop\TheVyshka copy\TheVyshka.Core\bin\Debug\netcoreapp3.1\TheVyshka.Data.pdb
+C:\Users\user\Desktop\TheVyshka copy\TheVyshka.Core\obj\Debug\netcoreapp3.1\TheVyshka.Core.csprojAssemblyReference.cache
+C:\Users\user\Desktop\TheVyshka copy\TheVyshka.Core\obj\Debug\netcoreapp3.1\TheVyshka.Core.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\TheVyshka copy\TheVyshka.Core\obj\Debug\netcoreapp3.1\TheVyshka.Core.AssemblyInfo.cs
+C:\Users\user\Desktop\TheVyshka copy\TheVyshka.Core\obj\Debug\netcoreapp3.1\TheVyshka.Core.csproj.CopyComplete
+C:\Users\user\Desktop\TheVyshka copy\TheVyshka.Core\obj\Debug\netcoreapp3.1\TheVyshka.Core.dll
+C:\Users\user\Desktop\TheVyshka copy\TheVyshka.Core\obj\Debug\netcoreapp3.1\TheVyshka.Core.pdb

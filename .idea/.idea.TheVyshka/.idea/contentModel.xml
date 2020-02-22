@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\user\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\user\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_TheVyshka.1682330731.00" t="ExcludeRecursive" />
+    <e p="C:\Users\user\Desktop\TheVyshka copy" t="IncludeFlat">
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="TheVyshka" t="IncludeRecursive">
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Configurations" t="Include">
+          <e p="ConfigureConnection.cs" t="Include" />
+          <e p="ConfigureServices.cs" t="Include" />
+        </e>
+        <e p="Controllers" t="Include">
+          <e p="CollaboratorController.cs" t="Include" />
+          <e p="PostController.cs" t="Include" />
+          <e p="TagController.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="TheVyshka.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Startup.cs" t="Include" />
+        <e p="TheVyshka.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="TheVyshka.Core" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="EF" t="Include">
+          <e p="TheVyshkaContext.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="TheVyshka.Core.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Repositories" t="Include">
+          <e p="CollaboratorRepository.cs" t="Include" />
+          <e p="PostRepository.cs" t="Include" />
+          <e p="TagRepository.cs" t="Include" />
+        </e>
+        <e p="TheVyshka.Core.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="TheVyshka.Data" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Converters" t="Include">
+          <e p="CollaboratorConverter.cs" t="Include" />
+          <e p="PostConverter.cs" t="Include" />
+          <e p="TagConverter.cs" t="Include" />
+        </e>
+        <e p="Dto" t="Include">
+          <e p="CollaboratorDto.cs" t="Include" />
+          <e p="PostDto.cs" t="Include" />
+          <e p="PostPreviewDto.cs" t="Include" />
+          <e p="TagsDto.cs" t="Include" />
+        </e>
+        <e p="Entities" t="Include">
+          <e p="Collaborator.cs" t="Include" />
+          <e p="Post.cs" t="Include" />
+          <e p="PostCollaborator.cs" t="Include" />
+          <e p="PostPreview.cs" t="Include" />
+          <e p="PostTag.cs" t="Include" />
+          <e p="Tags.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="TheVyshka.Data.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Repositories" t="Include">
+          <e p="ICollaboratorRepository.cs" t="Include" />
+          <e p="IPostRepository.cs" t="Include" />
+          <e p="ITagRepository.cs" t="Include" />
+        </e>
+        <e p="TheVyshka.Data.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="TheVyshka.sln" t="IncludeFlat" />
+    </e>
+  </component>
+</project>
