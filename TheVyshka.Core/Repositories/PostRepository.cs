@@ -207,6 +207,31 @@ namespace TheVyshka.Core.Repositories
         {
             var post = _context.Posts.Add(
                 PostConverter.Convert(item));
+            
+            if (item.Collaborators != null)
+            {
+                foreach (var collaborator in item.Collaborators)
+                {
+                    _context.PostCollaborators.Add(new PostCollaborator
+                    {
+                        PostId = item.Id,
+                        CollaboratorId = collaborator.Id
+                    });
+                }
+            }
+            
+            if (item.Tags != null)
+            {
+                foreach (var tag in item.Tags)
+                {
+                    _context.PostTags.Add(new PostTag
+                    {
+                        PostId = item.Id,
+                        TagId = tag.Id
+                    });
+                }
+            }
+
             await _context.SaveChangesAsync();
             return PostConverter.Convert(post.Entity);
         }

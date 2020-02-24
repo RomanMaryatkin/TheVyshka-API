@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Desktop\\TheVyshka copy\\TheVyshka.Data\\TheVyshka.Data.csproj": {}
+    "/Users/romanmaratkin/Desktop/Projects/StyleRU/TheVyshkaGIT/TheVyshka.Data/TheVyshka.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Desktop\\TheVyshka copy\\TheVyshka.Data\\TheVyshka.Data.csproj": {
+    "/Users/romanmaratkin/Desktop/Projects/StyleRU/TheVyshkaGIT/TheVyshka.Data/TheVyshka.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\TheVyshka copy\\TheVyshka.Data\\TheVyshka.Data.csproj",
+        "projectUniqueName": "/Users/romanmaratkin/Desktop/Projects/StyleRU/TheVyshkaGIT/TheVyshka.Data/TheVyshka.Data.csproj",
         "projectName": "TheVyshka.Data",
-        "projectPath": "C:\\Users\\user\\Desktop\\TheVyshka copy\\TheVyshka.Data\\TheVyshka.Data.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\TheVyshka copy\\TheVyshka.Data\\obj\\",
+        "projectPath": "/Users/romanmaratkin/Desktop/Projects/StyleRU/TheVyshkaGIT/TheVyshka.Data/TheVyshka.Data.csproj",
+        "packagesPath": "/Users/romanmaratkin/.nuget/packages/",
+        "outputPath": "/Users/romanmaratkin/Desktop/Projects/StyleRU/TheVyshkaGIT/TheVyshka.Data/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/romanmaratkin/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -52,7 +50,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/Users/romanmaratkin/.dotnet/sdk/3.1.101/RuntimeIdentifierGraph.json"
         }
       }
     }

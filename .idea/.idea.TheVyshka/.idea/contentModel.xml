@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\user\.Rider2019.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\user\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_TheVyshka.1682330731.00" t="ExcludeRecursive" />
-    <e p="C:\Users\user\Desktop\TheVyshka copy" t="IncludeFlat">
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="packages" t="ExcludeRecursive" />
       <e p="TheVyshka" t="IncludeRecursive">
         <e p="appsettings.Development.json" t="Include" />
@@ -88,5 +86,7 @@
       </e>
       <e p="TheVyshka.sln" t="IncludeFlat" />
     </e>
+    <e p="$USER_HOME$/Library/Caches/Rider2019.3/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2019.3/resharper-host/local/Transient/ReSharperHost/v193/SolutionCaches/_TheVyshka.-137970191.00" t="ExcludeRecursive" />
   </component>
 </project>
