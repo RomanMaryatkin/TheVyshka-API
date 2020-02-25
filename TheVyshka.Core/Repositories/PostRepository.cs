@@ -26,19 +26,23 @@ namespace TheVyshka.Core.Repositories
                 await _context.Posts.ToListAsync());
             foreach (var p in posts)
             {
-                var tags = new List<Tags>();
-                var postTags = _context.PostTags.Where(t => t.PostId == p.Id).ToList();
+                var tags = new List<TagsDto>();
+                var postTags = _context.PostTags.
+                    Where(t => t.PostId == p.Id).ToList();
                 foreach (var t in postTags)
                 {
-                    tags.Add(_context.Tags.FirstOrDefault(u => u.Id == t.TagId));
+                    tags.Add(TagConverter.Convert(await _context.Tags.
+                        FirstOrDefaultAsync(u => u.Id == t.TagId)));
                 }
                 p.Tags = tags;
                 
-                var collaborators = new List<Collaborator>();
-                var postCollaborators = _context.PostCollaborators.Where(c => c.PostId == p.Id).ToList();
+                var collaborators = new List<CollaboratorDto>();
+                var postCollaborators = _context.
+                    PostCollaborators.Where(c => c.PostId == p.Id).ToList();
                 foreach (var c in postCollaborators)
                 {
-                    collaborators.Add(_context.Collaborators.FirstOrDefault(u => u.Id == c.CollaboratorId));
+                    collaborators.Add(CollaboratorConverter.Convert(await _context.Collaborators.
+                        FirstOrDefaultAsync(u => u.Id == c.CollaboratorId)));
                 }
                 p.Collaborators = collaborators;
             }
@@ -50,19 +54,23 @@ namespace TheVyshka.Core.Repositories
             var post = PostConverter.Convert(
                 await _context.Posts.FindAsync(id));
             
-            var tags = new List<Tags>();
-            var postTags = _context.PostTags.Where(t => t.PostId == post.Id).ToList();
+            var tags = new List<TagsDto>();
+            var postTags = _context.PostTags.
+                Where(t => t.PostId == post.Id).ToList();
             foreach (var t in postTags)
             {
-                tags.Add(_context.Tags.FirstOrDefault(u => u.Id == t.TagId));
+                tags.Add(TagConverter.Convert(await _context.Tags.
+                    FirstOrDefaultAsync(u => u.Id == t.TagId)));
             }
             post.Tags = tags;
                 
-            var collaborators = new List<Collaborator>();
-            var postCollaborators = _context.PostCollaborators.Where(c => c.PostId == post.Id).ToList();
+            var collaborators = new List<CollaboratorDto>();
+            var postCollaborators = _context.PostCollaborators.
+                Where(c => c.PostId == post.Id).ToList();
             foreach (var c in postCollaborators)
             {
-                collaborators.Add(_context.Collaborators.FirstOrDefault(u => u.Id == c.CollaboratorId));
+                collaborators.Add(CollaboratorConverter.Convert(_context.Collaborators.
+                    FirstOrDefault(u => u.Id == c.CollaboratorId)));
             }
             post.Collaborators = collaborators;
             
@@ -75,19 +83,23 @@ namespace TheVyshka.Core.Repositories
                 await _context.Posts.ToListAsync());
             foreach (var p in posts)
             {
-                var tags = new List<Tags>();
-                var postTags = _context.PostTags.Where(t => t.PostId == p.Id).ToList();
+                var tags = new List<TagsDto>();
+                var postTags = _context.PostTags.
+                    Where(t => t.PostId == p.Id).ToList();
                 foreach (var t in postTags)
                 {
-                    tags.Add(_context.Tags.FirstOrDefault(u => u.Id == t.TagId));
+                    tags.Add(TagConverter.Convert(await _context.Tags.
+                        FirstOrDefaultAsync(u => u.Id == t.TagId)));
                 }
                 p.Tags = tags;
                 
-                var collaborators = new List<Collaborator>();
-                var postCollaborators = _context.PostCollaborators.Where(c => c.PostId == p.Id).ToList();
+                var collaborators = new List<CollaboratorDto>();
+                var postCollaborators = _context.PostCollaborators.
+                    Where(c => c.PostId == p.Id).ToList();
                 foreach (var c in postCollaborators)
                 {
-                    collaborators.Add(_context.Collaborators.FirstOrDefault(u => u.Id == c.CollaboratorId));
+                    collaborators.Add(CollaboratorConverter.Convert(await _context.Collaborators.
+                        FirstOrDefaultAsync(u => u.Id == c.CollaboratorId)));
                 }
                 p.Collaborators = collaborators;
             }
@@ -103,19 +115,23 @@ namespace TheVyshka.Core.Repositories
                 await _context.Posts.ToListAsync());
             foreach (var p in posts)
             {
-                var tags = new List<Tags>();
-                var postTags = _context.PostTags.Where(t => t.PostId == p.Id).ToList();
+                var tags = new List<TagsDto>();
+                var postTags = _context.PostTags.
+                    Where(t => t.PostId == p.Id).ToList();
                 foreach (var t in postTags)
                 {
-                    tags.Add(_context.Tags.FirstOrDefault(u => u.Id == t.TagId));
+                    tags.Add(TagConverter.Convert(await _context.Tags.
+                        FirstOrDefaultAsync(u => u.Id == t.TagId)));
                 }
                 p.Tags = tags;
                 
-                var collaborators = new List<Collaborator>();
-                var postCollaborators = _context.PostCollaborators.Where(c => c.PostId == p.Id).ToList();
+                var collaborators = new List<CollaboratorDto>();
+                var postCollaborators = _context.PostCollaborators.
+                    Where(c => c.PostId == p.Id).ToList();
                 foreach (var c in postCollaborators)
                 {
-                    collaborators.Add(_context.Collaborators.FirstOrDefault(u => u.Id == c.CollaboratorId));
+                    collaborators.Add(CollaboratorConverter.Convert(await _context.Collaborators.
+                        FirstOrDefaultAsync(u => u.Id == c.CollaboratorId)));
                 }
                 p.Collaborators = collaborators;
             }
@@ -142,19 +158,23 @@ namespace TheVyshka.Core.Repositories
                 await _context.Posts.ToListAsync());
             foreach (var p in posts)
             {
-                var tags = new List<Tags>();
-                var postTags = _context.PostTags.Where(t => t.PostId == p.Id).ToList();
+                var tags = new List<TagsDto>();
+                var postTags = _context.PostTags.
+                    Where(t => t.PostId == p.Id).ToList();
                 foreach (var t in postTags)
                 {
-                    tags.Add(_context.Tags.FirstOrDefault(u => u.Id == t.TagId));
+                    tags.Add(TagConverter.Convert(await _context.Tags.
+                        FirstOrDefaultAsync(u => u.Id == t.TagId)));
                 }
                 p.Tags = tags;
                 
-                var collaborators = new List<Collaborator>();
-                var postCollaborators = _context.PostCollaborators.Where(c => c.PostId == p.Id).ToList();
+                var collaborators = new List<CollaboratorDto>();
+                var postCollaborators = _context.PostCollaborators.
+                    Where(c => c.PostId == p.Id).ToList();
                 foreach (var c in postCollaborators)
                 {
-                    collaborators.Add(_context.Collaborators.FirstOrDefault(u => u.Id == c.CollaboratorId));
+                    collaborators.Add(CollaboratorConverter.Convert(await _context.Collaborators.
+                        FirstOrDefaultAsync(u => u.Id == c.CollaboratorId)));
                 }
                 p.Collaborators = collaborators;
             }
@@ -170,19 +190,23 @@ namespace TheVyshka.Core.Repositories
                 await _context.Posts.ToListAsync());
             foreach (var p in posts)
             {
-                var tags = new List<Tags>();
-                var postTags = _context.PostTags.Where(t => t.PostId == p.Id).ToList();
+                var tags = new List<TagsDto>();
+                var postTags = _context.PostTags.
+                    Where(t => t.PostId == p.Id).ToList();
                 foreach (var t in postTags)
                 {
-                    tags.Add(_context.Tags.FirstOrDefault(u => u.Id == t.TagId));
+                    tags.Add(TagConverter.Convert(await _context.Tags.
+                        FirstOrDefaultAsync(u => u.Id == t.TagId)));
                 }
                 p.Tags = tags;
                 
-                var collaborators = new List<Collaborator>();
-                var postCollaborators = _context.PostCollaborators.Where(c => c.PostId == p.Id).ToList();
+                var collaborators = new List<CollaboratorDto>();
+                var postCollaborators = _context.PostCollaborators.
+                    Where(c => c.PostId == p.Id).ToList();
                 foreach (var c in postCollaborators)
                 {
-                    collaborators.Add(_context.Collaborators.FirstOrDefault(u => u.Id == c.CollaboratorId));
+                    collaborators.Add(CollaboratorConverter.Convert(await _context.Collaborators.
+                        FirstOrDefaultAsync(u => u.Id == c.CollaboratorId)));
                 }
                 p.Collaborators = collaborators;
             }

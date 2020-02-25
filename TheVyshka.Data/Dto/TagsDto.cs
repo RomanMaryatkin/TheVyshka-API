@@ -8,6 +8,6 @@ namespace TheVyshka.Data.Dto
     {
         public Guid Id { get; set; }
         public string Name { get; set; }
-        public List<Post> Posts  { get; set; }
+        public List<PostDto> Posts  { get; set; }
     }
 }

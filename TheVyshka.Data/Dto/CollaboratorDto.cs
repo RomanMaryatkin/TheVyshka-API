@@ -11,6 +11,6 @@ namespace TheVyshka.Data.Dto
         public DateTime Date { get; set; }
         public string Description { get; set; }
         public string Links { get; set; }
-        public List<Post> Posts { get; set; }
+        public List<PostDto> Posts { get; set; }
     }
 }

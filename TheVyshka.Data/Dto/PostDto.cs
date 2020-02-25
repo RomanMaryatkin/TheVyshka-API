@@ -17,7 +17,7 @@ namespace TheVyshka.Data.Dto
         public string Text { get; set; }
         public string TextHtml { get; set; }
         public int ViewCount { get; set; }
-        public List<Collaborator> Collaborators { get; set; }
-        public List<Tags> Tags { get; set; }
+        public List<CollaboratorDto> Collaborators { get; set; }
+        public List<TagsDto> Tags { get; set; }
     }
 }

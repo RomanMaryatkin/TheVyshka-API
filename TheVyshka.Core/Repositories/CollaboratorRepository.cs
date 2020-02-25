@@ -27,11 +27,13 @@ namespace TheVyshka.Core.Repositories
             
             foreach (var c in collaborators)
             {
-                var posts = new List<Post>();
-                var postCollaborators = _context.PostCollaborators.Where(p => p.CollaboratorId == c.Id).ToList();
+                var posts = new List<PostDto>();
+                var postCollaborators = _context.PostCollaborators.
+                    Where(p => p.CollaboratorId == c.Id).ToList();
                 foreach (var p in postCollaborators)
                 {
-                    posts.Add(_context.Posts.FirstOrDefault(u => u.Id == p.PostId));
+                    posts.Add(PostConverter.Convert(await _context.Posts.
+                        FirstOrDefaultAsync(u => u.Id == p.PostId)));
                 }
                 c.Posts = posts;
             }
@@ -44,11 +46,13 @@ namespace TheVyshka.Core.Repositories
             var collaborator = CollaboratorConverter.Convert(
                 await _context.Collaborators.FindAsync(id));
             
-            var posts = new List<Post>();
-            var postCollaborators = _context.PostCollaborators.Where(p => p.CollaboratorId == collaborator.Id).ToList();
+            var posts = new List<PostDto>();
+            var postCollaborators = _context.PostCollaborators.
+                Where(p => p.CollaboratorId == collaborator.Id).ToList();
             foreach (var p in postCollaborators)
             {
-                posts.Add(_context.Posts.FirstOrDefault(u => u.Id == p.PostId));
+                posts.Add(PostConverter.Convert(await _context.Posts.
+                    FirstOrDefaultAsync(u => u.Id == p.PostId)));
             }
             collaborator.Posts = posts;
             

@@ -27,11 +27,13 @@ namespace TheVyshka.Core.Repositories
             
             foreach (var t in tags)
             {
-                var posts = new List<Post>();
-                var postTags = _context.PostTags.Where(p => p.TagId == t.Id).ToList();
+                var posts = new List<PostDto>();
+                var postTags = _context.PostTags.
+                    Where(p => p.TagId == t.Id).ToList();
                 foreach (var p in postTags)
                 {
-                    posts.Add(_context.Posts.FirstOrDefault(u => u.Id == p.PostId));
+                    posts.Add(PostConverter.Convert(await _context.Posts.
+                        FirstOrDefaultAsync(u => u.Id == p.PostId)));
                 }
                 t.Posts = posts;
             }
@@ -44,11 +46,12 @@ namespace TheVyshka.Core.Repositories
             var tag = TagConverter.Convert(
                 await _context.Tags.FindAsync(id));
             
-            var posts = new List<Post>();
+            var posts = new List<PostDto>();
             var postTags = _context.PostTags.Where(p => p.TagId == tag.Id).ToList();
             foreach (var p in postTags)
             {
-                posts.Add(_context.Posts.FirstOrDefault(u => u.Id == p.PostId));
+                posts.Add(PostConverter.Convert(await _context.Posts.
+                    FirstOrDefaultAsync(u => u.Id == p.PostId)));
             }
             tag.Posts = posts;
             
@@ -62,6 +65,18 @@ namespace TheVyshka.Core.Repositories
             await _context.SaveChangesAsync();
             return TagConverter.Convert(tag.Entity);
         }
+
+        public async Task<bool> AddToPost(Guid postId, Guid tagId)
+        {
+            var post = PostConverter.Convert(
+                await _context.Posts.FindAsync(postId));
+            var tag = TagConverter.Convert(
+                await _context.Tags.FindAsync(tagId));
+            if (tag == null || post == null)
+                return false;
+            post.Tags.Add(tag);
+            return true;
+        } 
 
         public async Task<bool> UpdateAsync(TagsDto item)
         {
